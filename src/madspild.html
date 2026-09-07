@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Madspild</title>
@@ -60,6 +60,16 @@
             margin: 0 auto;
         }
 
+        .billede-wrapper {
+            position: relative;
+            display: inline-block;
+        }
+        .deltag-knap {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+        }
+
         #kontakt {
             background-color: #C8C8C8;
         }
@@ -94,6 +104,30 @@
 <section id="tilmeld">
     <h1>Tilmeld event</h1>
     <p>Kommende events:</p>
+
+    <div class="billede-wrapper">
+        <img src="Pictures/maddonation.jpg" alt="maddonation"  height="300" width="300">
+        <button class="deltag-knap">Deltag</button>
+    </div>
+
+    <div class="billede-wrapper">
+        <img src="Pictures/toogoodtogo.jpg" alt="toogoodtogo" height="300" width="300">
+        <button class="deltag-knap">Deltag</button>
+    </div>
+
+    <div class="billede-wrapper">
+        <img src="Pictures/bank.jpg" alt="bank" height="300" width="300">
+        <button class="deltag-knap">Deltag</button>
+    </div>
+
+</section>
+
+<section id="Nyhedsbrev">
+    <h2>Tilmeld nyhedsbrev</h2>
+    <label>Email:</label>
+    <input type="email" name=email> <br><br>
+    <button>Submit</button>
+
 </section>
 
 <section id="kontakt">
