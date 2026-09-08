@@ -15,6 +15,10 @@
             margin: 10px;
         }
 
+        p {
+            font-size: 20px;
+        }
+
         .head {
             background-color: green;
             color: white;
@@ -60,6 +64,17 @@
             margin: 0 auto;
         }
 
+        .img-wrapper {
+            position: relative;
+            display: inline-block;
+        }
+
+        .join-button {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+        }
+
         #kontakt {
             background-color: #C8C8C8;
         }
@@ -71,7 +86,7 @@
 
 <div class="head">
     | Madspild |
-    <a href="#forside">Forside</a>
+    <a href="#info">Info</a>
     <a href="#tilmeld">Tilmeld event</a>
     <a href="#kontakt">Kontakt</a>
 </div>
@@ -80,20 +95,46 @@
 <img src="Pictures/madspild2.png" alt="Madspild2" class="banner">
 
 
-<section id="forside">
-    <h1>Info:</h1>
+<section id="info">
+    <h1>Vidste du at:</h1>
     <p>• Madspildet i den danske servicesektor udgør 227.000-ton pr. år.
-        Til sammenligning er det samlede madspild fra husholdningerne 261.000-ton pr. år.</p>
+        Til sammenligning er det samlede madspild fra husholdningerne 261.000-ton pr. år.</p><br>
     <p>• Det største madspild i servicesektoren stammer fra detailhandelen,
-        der spilder 163.000 tons pr. år, svarende til 72 % af servicesektorens madspild.</p>
+        der spilder 163.000 tons pr. år, svarende til 72 % af servicesektorens madspild.</p><br>
     <p>• Af detailhandelens madspild står specialforretninger som slagtere, fiskeforretninger
         og grønthandlere for 12.000 tons pr. år, mens ikke-specialiserede forretninger
-        som kiosker, købmænd, supermarkeder og varehuse står for 151.000-ton pr. år.</p>
+        som kiosker, købmænd, supermarkeder og varehuse står for 151.000-ton pr. år.</p><br>
 </section>
+
+<img src="Pictures/protest.png" alt="Protest" class="banner">
 
 <section id="tilmeld">
     <h1>Tilmeld event</h1>
     <p>Kommende events:</p>
+
+    <div class="img-wrapper">
+        <img src="Pictures/maddonation.png" alt="maddonation" height="300" width="300">
+        <button class="join-button">Deltag</button>
+    </div>
+
+    <div class="img-wrapper">
+        <img src="Pictures/toogoodtogo.png" alt="toogoodtogo" height="300" width="300">
+        <button class="join-button">Deltag</button>
+    </div>
+
+    <div class="img-wrapper">
+        <img src="Pictures/bank.png" alt="bank" height="300" width="300">
+        <button class="join-button">Deltag</button>
+    </div>
+
+</section>
+
+<section id="Nyhedsbrev">
+    <h2>Tilmeld nyhedsbrev</h2>
+    <label>Email:</label>
+    <input type="email" name=email> <br><br>
+    <button>Submit</button>
+
 </section>
 
 <section id="kontakt">
