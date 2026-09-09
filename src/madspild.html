@@ -21,7 +21,7 @@
 
         .head {
             background-color: green;
-            color: white;
+            color: #C8C8C8;
             text-align: left;
             font-family: Georgia, serif;
             font-weight: bold;
@@ -41,7 +41,7 @@
 
         section {
             padding: 50px;
-            min-height: 400px;
+            min-height: 200px;
         }
 
         .img {
@@ -64,9 +64,23 @@
             margin: 0 auto;
         }
 
+        .events {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
         .img-wrapper {
             position: relative;
-            display: inline-block;
+            width: 30%;
+        }
+
+        .img-wrapper img {
+            width: 100%;
+            height: 350px;
+            display: block;
         }
 
         .join-button {
@@ -87,6 +101,7 @@
 <div class="head">
     | Madspild |
     <a href="#info">Info</a>
+    <a href="#opskrifter">Opskrifter</a>
     <a href="#tilmeld">Tilmeld event</a>
     <a href="#kontakt">Kontakt</a>
 </div>
@@ -110,27 +125,28 @@
 
 <section id="tilmeld">
     <h1>Tilmeld event</h1>
-    <p>Kommende events:</p>
 
+<div class = "events">
     <div class="img-wrapper">
-        <img src="Pictures/maddonation.png" alt="maddonation" height="300" width="300">
+        <img src="Pictures/maddonation.png" alt="maddonation">
         <button class="join-button">Deltag</button>
     </div>
 
     <div class="img-wrapper">
-        <img src="Pictures/toogoodtogo.png" alt="toogoodtogo" height="300" width="300">
+        <img src="Pictures/toogoodtogo.png" alt="toogoodtogo">
         <button class="join-button">Deltag</button>
     </div>
 
     <div class="img-wrapper">
-        <img src="Pictures/bank.png" alt="bank" height="300" width="300">
+        <img src="Pictures/bank.png" alt="bank">
         <button class="join-button">Deltag</button>
     </div>
+</div>
 
 </section>
 
 <section id="Nyhedsbrev">
-    <h2>Tilmeld nyhedsbrev</h2>
+    <h2>Tilmeld dig vores nyhedsbrev:</h2>
     <label>Email:</label>
     <input type="email" name=email> <br><br>
     <button>Submit</button>
