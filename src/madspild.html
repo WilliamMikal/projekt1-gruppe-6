@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Madspild</title>
+
     <style>
         body {
             margin: 0;
@@ -44,12 +45,6 @@
             min-height: 200px;
         }
 
-        .img {
-            width: 80%;
-            height: 275px;
-            object-fit: cover;
-        }
-
         .banner {
             width: 100%;
             height: 520px;
@@ -67,33 +62,84 @@
         .events {
             display: flex;
             justify-content: center;
-            align-items: center;
             gap: 30px;
             flex-wrap: wrap;
         }
 
         .img-wrapper {
             position: relative;
-            width: 30%;
+
+            width: 350px;
+            height: 350px;
+
+            overflow: hidden;
         }
 
         .img-wrapper img {
             width: 100%;
-            height: 350px;
+            height: 100%;
+            object-fit: cover;
             display: block;
+        }
+
+        .event-title {
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            width: 100%;
+            box-sizing: border-box;
+
+            padding: 15px;
+
+            background-color: rgba(0, 0, 0, 0.65);
+            color: white;
+
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+
+            margin: 0;
         }
 
         .join-button {
             position: absolute;
-            bottom: 10px;
-            right: 10px;
+            bottom: 15px;
+            right: 15px;
+
+            background-color: green;
+            color: white;
+
+            border: none;
+            border-radius: 8px;
+
+            padding: 12px 24px;
+
+            font-size: 18px;
+            font-weight: bold;
+
+            cursor: pointer;
+        }
+
+        .join-button:hover {
+            background-color: darkgreen;
         }
 
         #kontakt {
-            background-color: #C8C8C8;
+            background-color: green;
+            color: lightgray;
+        }
+
+        #info {
+            color: darkgreen;
+        }
+
+        #nyhedsbrev {
+            background-color: darkgray;
         }
 
     </style>
+
 </head>
 
 <body>
@@ -112,54 +158,107 @@
 
 <section id="info">
     <h1>Vidste du at:</h1>
-    <p>• Madspildet i den danske servicesektor udgør 227.000-ton pr. år.
-        Til sammenligning er det samlede madspild fra husholdningerne 261.000-ton pr. år.</p><br>
-    <p>• Det største madspild i servicesektoren stammer fra detailhandelen,
-        der spilder 163.000 tons pr. år, svarende til 72 % af servicesektorens madspild.</p><br>
-    <p>• Af detailhandelens madspild står specialforretninger som slagtere, fiskeforretninger
-        og grønthandlere for 12.000 tons pr. år, mens ikke-specialiserede forretninger
-        som kiosker, købmænd, supermarkeder og varehuse står for 151.000-ton pr. år.</p><br>
+
+    <p>
+        • Madspildet i den danske servicesektor udgør 227.000-ton pr. år.
+        Til sammenligning er det samlede madspild fra husholdningerne
+        261.000-ton pr. år.
+    </p>
+
+    <br>
+
+    <p>
+        • Det største madspild i servicesektoren stammer fra detailhandelen,
+        der spilder 163.000 tons pr. år, svarende til 72 % af servicesektorens madspild.
+    </p>
+
+    <br>
+
+    <p>
+        • Af detailhandelens madspild står specialforretninger som slagtere,
+        fiskeforretninger og grønthandlere for 12.000 tons pr. år, mens
+        ikke-specialiserede forretninger som kiosker, købmænd, supermarkeder
+        og varehuse står for 151.000-ton pr. år.
+    </p>
+
+    <br>
 </section>
+
 
 <img src="Pictures/protest.png" alt="Protest" class="banner">
 
+
 <section id="tilmeld">
+
     <h1>Tilmeld event</h1>
 
-<div class = "events">
-    <div class="img-wrapper">
-        <img src="Pictures/maddonation.png" alt="maddonation">
-        <button class="join-button">Deltag</button>
-    </div>
+    <div class="events">
 
-    <div class="img-wrapper">
-        <img src="Pictures/toogoodtogo.png" alt="toogoodtogo">
-        <button class="join-button">Deltag</button>
-    </div>
+        <div class="img-wrapper">
 
-    <div class="img-wrapper">
-        <img src="Pictures/bank.png" alt="bank">
-        <button class="join-button">Deltag</button>
+            <img src="Pictures/maddonation.png" alt="Madmesse">
+
+            <p class="event-title">Madmesse</p>
+
+            <button class="join-button">Deltag</button>
+
+        </div>
+
+
+        <div class="img-wrapper">
+
+            <img src="Pictures/toogoodtogo.png" alt="Too Good To Go">
+
+            <p class="event-title">Too Good To Go</p>
+
+            <button class="join-button">Deltag</button>
+
+        </div>
+
+
+        <div class="img-wrapper">
+
+            <img src="Pictures/bank.png" alt="Madbank">
+
+            <p class="event-title">Madbank</p>
+
+            <button class="join-button">Deltag</button>
+
+        </div>
+
     </div>
-</div>
 
 </section>
 
-<section id="Nyhedsbrev">
+
+<section id="nyhedsbrev">
+
     <h2>Tilmeld dig vores nyhedsbrev:</h2>
+
     <label>Email:</label>
-    <input type="email" name=email> <br><br>
+    <input type="email" name="email">
+
+    <br><br>
+
     <button>Submit</button>
 
 </section>
 
+
 <section id="kontakt">
+
     <h1>Kontakt os:</h1>
+
     <p>Tlf: 1122 3344</p>
+
     <p>Mandag og tirsdag kl. 10:00 - 13:00</p>
+
     <br>
+
     <p>Mail:</p>
+
     <p>madspild@madspild.dk</p>
+
 </section>
 
 </body>
