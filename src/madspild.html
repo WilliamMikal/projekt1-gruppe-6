@@ -138,16 +138,49 @@
             background-color: darkgray;
         }
 
+        .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 20px;
+            background-color: green;
+            min-width: 150px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .dropdown-content a {
+            display: block;
+            color: white;
+            padding: 12px 15px;
+            margin: 0;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
     </style>
 
 </head>
-
 <body>
-
 <div class="head">
     | Madspild |
     <a href="#info">Info</a>
-    <a href="#opskrifter">Opskrifter</a>
+
+    <div class="dropdown">
+        <a href="#opskrifter">Opskrifter</a>
+        <div class="dropdown-content">
+            <a href="https://www.valdemarsro.dk/pasta/" target="_blank">Pasta</a>
+            <a href="https://www.valdemarsro.dk/hjemmelavet-pizza/" target="_blank">Pizza</a>
+            <a href="https://www.valdemarsro.dk/suppe/" target="_blank">Suppe</a>
+        </div>
+    </div>
+
     <a href="#tilmeld">Tilmeld event</a>
     <a href="#kontakt">Kontakt</a>
 </div>
@@ -181,7 +214,6 @@
         og varehuse står for 151.000-ton pr. år.
     </p>
 
-    <br>
 </section>
 
 
