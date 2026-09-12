@@ -63,43 +63,25 @@
             display: flex;
             justify-content: center;
             gap: 30px;
-            flex-wrap: wrap;
         }
 
         .img-wrapper {
             position: relative;
-
             width: 350px;
-            height: 350px;
-
-            overflow: hidden;
         }
 
         .img-wrapper img {
-            width: 100%;
-            height: 100%;
+            width: 350px;
+            height: 350px;
             object-fit: cover;
             display: block;
         }
 
-        .event-title {
-            position: absolute;
-            top: 0;
-            left: 0;
-
-            width: 100%;
-            box-sizing: border-box;
-
-            padding: 15px;
-
-            background-color: rgba(0, 0, 0, 0.65);
-            color: white;
-
+        .event-titel {
+            margin: 0;
             font-size: 24px;
             font-weight: bold;
             text-align: center;
-
-            margin: 0;
         }
 
         .join-button {
@@ -111,18 +93,10 @@
             color: white;
 
             border: none;
-            border-radius: 8px;
-
-            padding: 12px 24px;
-
+            padding: 12px 12px;
             font-size: 18px;
-            font-weight: bold;
 
             cursor: pointer;
-        }
-
-        .join-button:hover {
-            background-color: darkgreen;
         }
 
         #kontakt {
@@ -182,6 +156,7 @@
     </div>
 
     <a href="#tilmeld">Tilmeld event</a>
+    <a href="#nyhedsbrev">Nyhedsbrev</a>
     <a href="#kontakt">Kontakt</a>
 </div>
 
@@ -228,9 +203,9 @@
 
         <div class="img-wrapper">
 
-            <img src="Pictures/maddonation.png" alt="Madmesse">
+            <p class="event-titel">Madmesse</p>
 
-            <p class="event-title">Madmesse</p>
+            <img src="Pictures/maddonation.png" alt="Madmesse">
 
             <button class="join-button">Deltag</button>
 
@@ -238,11 +213,11 @@
 
 
         <div class="img-wrapper">
+
+            <p class="event-titel">Too Good To Go</p>
 
             <img src="Pictures/toogoodtogo.png" alt="Too Good To Go">
 
-            <p class="event-title">Too Good To Go</p>
-
             <button class="join-button">Deltag</button>
 
         </div>
@@ -250,9 +225,9 @@
 
         <div class="img-wrapper">
 
-            <img src="Pictures/bank.png" alt="Madbank">
+            <p class="event-titel">Madbank</p>
 
-            <p class="event-title">Madbank</p>
+            <img src="Pictures/bank.png" alt="Madbank">
 
             <button class="join-button">Deltag</button>
 
